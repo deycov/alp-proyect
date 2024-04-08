@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>NatureApp</h1>
+  <div>
+    <h2 id="title-city">Ciudad</h2>
+    <h3 id="title-temperature">Temperatura</h3>
+    <p id="text-description">Descripcion</p>
+    <p id="text-date">fecha</p>
+  </div>
+
+  <div>
+    <form>
+      <h2>Buscar ciudad</h2>
+      <p id="error-message"></p>
+      <label> Nombre de la ciudad </label>
+      <input type="text" name="city" id="city">
+      <input type="submit" id="find-city" value="Buscar">
+    </form>
+  </div>
+
+  <script src="../api.js"></script>
+</body>
+</html>
