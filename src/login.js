@@ -13,11 +13,15 @@ const validateLogin = (email, pass, usersList) => {
 
 loginButtom.addEventListener("click", (event)=>{
   event.preventDefault();
+  const error = document.getElementById("error-message");
+  error.innerText = "";
   const email = document.getElementById("email");
   const pass = document.getElementById("pass");
   const usersList = getLocalStorageInfo();
   let validate = validateLogin(email.value, pass.value, usersList);
   if (validate) {
+    const info = document.getElementById("info-message");
+    info.innerText = "Login realizado con exito, Bienvenido de nuevo";
     // Redirigir al usuario a la página principal
     window.location.href = "/src/view/layout.html";
  } else {

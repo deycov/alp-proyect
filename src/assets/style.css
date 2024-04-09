@@ -1,0 +1,63 @@
+body{
+  background-color: #121622;
+  color: #d2d2d2;
+}
+
+body h1,h2,h3,h4{
+  color: #fff;
+}
+
+.form-control{
+  height: 40px;
+  background-color: #606679;
+  color: #d2d2d2;
+}
+
+.form-control::placeholder{
+  color: #d2d2d2;
+}
+
+.form-control:focus{
+  background-color: #606679;
+  color: #d2d2d2;
+}
+
+.solar-register{
+  width: 84px;
+  height: 84px;
+  margin: auto;
+  border-radius: 100%;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(111,212,244,1) 0%, rgba(254,48,3,1) 100%);
+}
+
+.btn-register{
+  border: none;
+  color: #fff;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(111,212,244,1) 0%, rgba(254,48,3,1) 100%);
+}
+
+.btn-register:hover{
+  text-decoration: underline;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(254,48,3,1) 0%, rgba(111,212,244,1) 100%);
+}
+
+.btn-login{
+  border: none;
+  color: #fff;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(33,91,35,1) 0%, rgba(15,211,129,1) 100%);
+}
+
+.btn-login:hover{
+  text-decoration: underline;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,211,129,1) 0%, rgba(33,91,35,1) 100%);
+}
+
+.navbar{
+  color: #fff!important;
+}
+
+.inactive{
+  display: none;
+}

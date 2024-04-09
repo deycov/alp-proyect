@@ -29,6 +29,9 @@ const validateInfo = (name, last, email, pass) => {
 
 registerButton.addEventListener("click",(event)=>{
   event.preventDefault();
+  const error = document.getElementById("error-message");
+  error.innerText = "";
+
   const name = document.getElementById("name");
   const last = document.getElementById("last");
   const email = document.getElementById("email");
@@ -36,6 +39,9 @@ registerButton.addEventListener("click",(event)=>{
   const isValidate = validateInfo(name.value, last.value, email.value, pass.value);
 
   if (isValidate){
+    const info = document.getElementById("info-message");
+    info.innerText = "Usuario guardado con exito";
+
     const userDate = {
       name: name.value,
       lastName: last.value,
@@ -44,6 +50,7 @@ registerButton.addEventListener("click",(event)=>{
     };
 
     setLocalStorageInfo(userDate);
+    window.location.href = "/src/view/login.html";
   }
 })
 

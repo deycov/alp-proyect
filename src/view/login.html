@@ -3,23 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/style.css">
   <title> Title </title>
 </head>
 <body>
-  
-  <div>
-    <a href="./index.html"> Ir a register </a>
-    <h2>Form</h2>
-    <label id="error-message"></label>
-    <form id="login-form">
-      <input id="email" type="text" placeholder="Su correo" name="email">
-      <input id="pass" type="text" placeholder="Su contraseña" name="password">
-      <input type="submit"  id="login-btn" value="Enviar">
-    </form>
 
-    <script src="../login.js"></script>
-    <script src="../storage.js"></script>
-    <script src="../routes.js"></script>
-  </div>
+  <div class="container-fluid align-items-center mt-5">
+    <div class="row justify-content-center p-2 ">
+      <div class="col-sm-6 col-md-4 mb-3 d-flex flex-column justify-content-center align-items-center">
+        <label class="form-label"> Aun no tienes una cuenta? </label>
+        <a href="./index.html" class="btn d-grid gap-2 col-6 mx-auto btn-register"> Registrate </a>
+      </div>
+
+      <div class="col-sm-12 col-md-5 col-lg-4 p-4 bg-info bg-opacity-10 border border-info rounded">
+        <div class="solar-register"></div>
+        <h1 class="text-center">NatureApp</h1>
+        <h2 class="text-center">Bienvenido de nuevo</h2>
+        <label id="info-message" class="link-info"></label>
+        <label id="error-message" class="link-warning"></label>
+        <form id="login-form" class="p-2">
+
+          <div class="mb-3">
+            <label class="form-label">Correo Electronico</label>
+            <input id="email" type="text" class="form-control" placeholder="Ej: jhondoe@iujo.com" name="email">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Contraseña</label>
+            <input id="pass" type="password" class="form-control" placeholder="*****" name="password">
+          </div>
+
+          <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
+            <input type="submit" class="btn btn-login" id="login-btn" value="Enviar">
+          </div>
+        </form>
+      </div>
+    </div>
+
+  <script src="../login.js"></script>
+  <script src="../storage.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
